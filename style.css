@@ -1,0 +1,79 @@
+* {
+  padding: 20px 0;
+  margin: 0 auto;
+  background-image: url('img/flock.png');
+  background-repeat: repeat-y;
+  background-size: cover;
+  /* background-color: rgb(11, 11, 29); */
+}
+#game {
+  width: 800px;
+  height: 300px;
+  border: 1px solid rgb(133, 130, 130);
+  background-image: url('img/ny-skyline.webp'), url('img/background.png');
+  background-size: cover;
+  background-position-y: 20px, bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+#character {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background-color: none;
+  background-image: url('img/pigeon.png');
+  background-size: contain;
+  position: relative;
+  top: 295px;
+  left: 80px
+}
+.animate {
+  animation: jump 900ms;
+}
+@keyframes jump {
+  0%{top: 295px;}
+  30%{top: 180px}
+  70%{top: 240px}
+  100%{top: 295px}
+}
+#block1 {
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 30px;
+  background-color: none;
+  background-image: url('img/taxi.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  top: 268px;
+  left: 750px;
+
+  animation: block1 2.5s infinite linear;
+}
+@keyframes block1 {
+  0%{ left: 750px; }
+  100%{ left: -10px; }
+}
+
+#block2 {
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 30px;
+  background-color: none;
+  background-image: url('img/taxi.png');
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  position: relative;
+  top: 238px;
+  left: 750px;
+
+  animation: block2 4s infinite linear;
+}
+@keyframes block2 {
+  0%{ left: 750px; }
+  100%{ left: -10px; }
+}
