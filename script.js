@@ -1,4 +1,4 @@
-// confirm('Click your mouse to make the pigeon jump.\n\nAvoid the taxi.')
+confirm('Click your mouse to make the pigeon jump.\n\nAvoid the taxi.')
 
 let character = document.getElementById('character');
 let block1 = document.getElementById('block1');
