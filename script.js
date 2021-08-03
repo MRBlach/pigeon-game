@@ -39,5 +39,5 @@ let checkDead = setInterval(function() {
 
 function gameOver() {
   alert('Game Over!\n\nPress OK to restart game.')
-  window.location = '/'
+  window.reload();
 }
