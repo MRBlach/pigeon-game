@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-<img src="img/pigeon-flap.png" width="150px">
+<img src="https://i.ibb.co/bP5F6hT/Untitled.pngg" width="300px">
 <br>
 Pigeon Game
 </h1> 
