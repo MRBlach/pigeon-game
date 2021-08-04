@@ -5,7 +5,7 @@
 }
 #game {
   width: 800px;
-  height: 300px;
+  height: 320px;
   border: 1px solid rgb(133, 130, 130);
   background-image: url('img/ny-skyline.webp'), url('img/background.png');
   background-size: cover;
@@ -21,19 +21,19 @@
   background-image: url('img/pigeon.png');
   background-size: contain;
   position: relative;
-  top: 295px;
+  top: 300px;
   left: 80px
 }
-.animate {
+.animatePigeon {
   animation: jump 900ms;
 }
 @keyframes jump {
-  0%{top: 295px;}
+  0%{top: 300px;}
   30%{top: 180px}
   70%{top: 240px}
-  100%{top: 295px}
+  100%{top: 300px}
 }
-#block1 {
+#taxi1 {
   margin: 0;
   padding: 0;
   width: 80px;
@@ -44,17 +44,18 @@
   background-repeat: no-repeat;
   background-position: bottom;
   position: relative;
-  top: 268px;
-  left: 750px;
-
-  animation: block1 2.5s infinite linear;
+  top: 275px;
+  left: 720px;
 }
-@keyframes block1 {
-  0%{ left: 750px; }
+.animateTaxi1 {
+  animation: taxi1 2.5s infinite linear;
+}
+@keyframes taxi1 {
+  0%{ left: 730px; }
   100%{ left: -10px; }
 }
 
-#block2 {
+#taxi2 {
   margin: 0;
   padding: 0;
   width: 80px;
@@ -65,12 +66,13 @@
   background-repeat: repeat-x;
   background-position: bottom;
   position: relative;
-  top: 238px;
-  left: 750px;
-
-  animation: block2 4s infinite linear;
+  top: 250px;
+  left: 720px;
 }
-@keyframes block2 {
-  0%{ left: 750px; }
+.animateTaxi2 {
+    animation: taxi2 4s infinite linear;
+}
+@keyframes taxi2 {
+  0%{ left: 730px; }
   100%{ left: -10px; }
 }
